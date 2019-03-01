@@ -3,7 +3,7 @@
 #### PDF - Protocolo Documentos e fluxos
 
 
-SELECT distinct a.numeroorigem, a.registro, c.nome,  f.nome as nome_funcionario FROM pdfdocumento a inner Join
+SELECT DISTINCT a.numeroorigem, a.registro, c.nome,  f.nome as nome_funcionario FROM pdfdocumento a inner Join
 pdfdoctipomodelo b on a.tipo = b.documentotipo inner Join 
 pdftipodocumento c on  b.nome = c.Nome inner Join 
 pdfusuariolocal d on a.usuario = d.usuario inner Join
